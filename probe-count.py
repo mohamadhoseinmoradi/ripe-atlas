@@ -9,5 +9,5 @@ for country in pycountry.countries:
         response = response.json()
     probe_count_dict[country.name] = [response["count"]]
 
-sort_top_10 = sorted(probe_count_dict.items(), key= lambda item: item[1], reverse=True)[:10]}
-print ("here are the top 10 countries hosting probes: ", *sort_top_10)
+sort_top_10 = sorted(probe_count_dict.items(), key= lambda item: item[1], reverse=True)[:10]
+print ("here are the top 10 countries hosting probes: ", sort_top_10)                                                                                        
